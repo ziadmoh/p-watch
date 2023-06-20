@@ -71,7 +71,7 @@
                 <a
                     id="itemLink"
                     href="${item.href}"
-                    class="${item.href == window.location.pathname.split('/')[1] || (item.href == 'index.html' && window.location.pathname == '/')  ? 'active' :'' } d-flex align-items-center px-4 py-2 mb-2 cursor-pointer w-full menu-link">
+                    class="${item.href == window.location.href.substring(window.location.href.lastIndexOf('/') + 1) || (item.href == 'index.html' && window.location.href.substring(window.location.href.lastIndexOf('/') + 1) == '')  ? 'active' :'' } d-flex align-items-center px-4 py-2 mb-2 cursor-pointer w-full menu-link">
 
                     <i class="${item.iconClass} menu-icon "></i>
                     <div
