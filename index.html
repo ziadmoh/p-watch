@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+
+    <!-- Layout  -->
+    <div class="main-layout sidebar-open" id="layout">
+      <!-- NavBar -->
+
+      <nav class="app-nav app-nav-open navbar navbar-expand-lg bg-white"
+        id="navbar">
+        
+        <div class="container-fluid items-container ">
+          <span class=" text-black mx-4" >Hello Amir</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars navbar-toggler-icon "></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <span class="nav-date" >
+                  <i class="fa-solid fa-angles-right mx-2"></i> 
+                  May 19, 2023
+                </span>
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <span class="notification">
+                <i class="fa-solid fa-bell"></i>
+              </span>
+              <span class=" mx-4 d-flex justify-content-center align-items-center profile">
+                <img alt="user-profile" src="./assets/img/user-profile.png">
+                <div class="mx-2 d-flex flex-column justify-content-center align-items-start">
+                  <h6 class="user-name p-0 m-0">Amir Halim</h6>
+                  <small>
+                    <a href="#" class=" profile-link">View Profile</a>
+                  </small>
+                </div>  
+              </span>
+              <span class="rest-items mx-2">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- SideBar -->
+
+      <aside
+        class="sidebar position-fixed d-flex flex-column justify-content-between"
+        id="sidebar">
+        <div class=" position-relative">
+          <i class="fa-solid fa-bars position-absolute toggle-icon"
+            onclick="toggleSidebar()"></i>
+          <!-- Header -->
+          <div
+            class="sidebar-header sidebar-header d-flex flex-column justify-content-center align-items-center">
+            <h4 class="app-name" id="appName">Property Watch</h4>
+            <span class="app-slogan mt-1">Real Estate</span>
+          </div>
+          <!-- Sidebar Items -->
+
+          <ul class="list-unstyled mx-3 overflow-auto sidebar-items-list" id="sidebarItemsList">
+            <!-- Item -->
+
+          </ul>
+        </div>
+
+        <ul class="list-unstyled ">
+          <!-- Item -->
+          <li class="sidebar-li-item position-relative mx-2">
+            <a
+              href="https://www.google.com"
+              class=" d-flex align-items-center px-4 py-2 mb-2 cursor-pointer w-full menu-link">
+
+              <i class="fa-solid fa-right-to-bracket  menu-icon"></i>
+              <div
+                class="open d-flex justify-between align-items-center flex-1 menu-group">
+                <span
+                  class=" text-capitalize item-label mx-2"
+                  id="itemLabel">Log Out</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Page Content -->
+      <main class="d-flex flex-column main-wrapper">
+        <div class="main-content my-1">
+          <div class="row" id="dashboardSection">
+            <!-- Items -->
+          </div>   
+        </div>
+        <!-- main footer -->
+      </main>
+      <div class=" layout-mask" onClick="closeSidebar()"></div>
+    </div>
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/fontawesome.min.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
+    <script src="./assets/js/dashboard.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
